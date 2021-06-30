@@ -65,3 +65,7 @@ border-color: #1fd013;
 .card-border-4{
   border-color: #b42c0f;
   }
+
+.max{
+  max-width: 50%;
+}
