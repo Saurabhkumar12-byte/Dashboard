@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="css/dataTables.bootstrap5.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Dashboard</title>
+  </head>
+  <body class="bg-light">
+    <!-- top navigation bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container-fluid">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#sidebar"
+          aria-controls="offcanvasExample"
+        >
+          <span class="navbar-toggler-icon" data-bs-target="#sidebar"></span>
+        </button>
+        <a
+          class="navbar-brand me-auto ms-lg-0 ms-3 text-uppercase fw-bold"
+          href="#"
+          >Logo</a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#topNavBar"
+          aria-controls="topNavBar"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="topNavBar">
+          <form class="d-flex ms-auto my-3 my-lg-0">
+            <div class="input-group">
+              <input
+                class="form-control"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button class="btn btn-primary" type="submit">
+                <i class="bi bi-search"></i>
+              </button>
+            </div>
+          </form>
+          <ul class="navbar-nav">
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle ms-2"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <i class="bi bi-person-fill"></i>
+              </a>
+              <ul class="dropdown-menu dropdown-menu-end">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- top navigation bar -->
+    <!-- offcanvas -->
+    <div
+      class="offcanvas offcanvas-start sidebar-nav bg-dark"
+      tabindex="-1"
+      id="sidebar"
+    >
+      <div class="offcanvas-body p-0">
+        <nav class="navbar-dark">
+          <ul class="navbar-nav">
+            
+            <li class="mt-4">
+              <a href="#" class="nav-link px-3 active">
+                <span class="me-2"><i class="bi bi-speedometer2"></i></span>
+                <span>Dashboard</span>
+              </a>
+            </li>
+            <li class="mt-2">
+              <a href="#" class="nav-link px-3 active">
+                <span class="me-2"><i class="bi bi-speedometer2"></i></span>
+                <span>Assign New Work</span>
+              </a>
+            </li>
+            <li class="mt-2">
+              <a href="#" class="nav-link px-3 active">
+                <span class="me-2"><i class="bi bi-speedometer2"></i></span>
+                <span>Previous Work</span>
+              </a>
+            </li>
+            
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <!-- offcanvas -->
+    <main class="mt-5 pt-3">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-12">
+            <h1 class="d-inline-block">Dashboard</h1>
+            <nav class="p-3 m-3 justify-content-center bg-white d-inline-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Home</li><li class="active breadcrumb-item" aria-current="page">Dashboard</li></ol></nav>
+          </div>
+          <p>Recent Work</p>
+          
+        </div>
+      </div>
+
+      <div class="container-fluid">
+       <div class="m-3  bg-white">
+        <div class="row justify-content-around">
+          <div class="col-md-6 border border-light bg-white flex justify-content-center align-items-center p-3">
+            <div class="row p-1">
+              <p class="text-center">Before Last Date </p>
+              <div class="col-sm-6 ">
+                <div class="card mt-2  card-border-1">
+                  <h5 class="card-title text-center m-2 ">Done District</h5>
+                  <div class="card-body  card1">
+                   <div class=""> <p class="card-text text-center m-2 ">24</p></div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6 ">
+                <div class="card mt-2  card-border-2">
+                  <h5 class="card-title text-center m-2 ">Pending District</h5>
+                  <div class="card-body  card2">
+                   <div class=""> <p class="card-text text-center m-2 ">10</p></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 border border-light bg-white  flex justify-content-center align-items-center p-3">
+            <div class="row p-1">
+              <p class="text-center">After Last Date </p>
+              <div class="col-sm-6 ">
+                <div class="card mt-2  card-border-3">
+                  <h5 class="card-title text-center m-2 ">Done District</h5>
+                  <div class="card-body  card3">
+                   <div class=""> <p class="card-text text-center m-2 ">18</p></div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6 ">
+                <div class="card mt-2  card-border-4">
+                  <h5 class="card-title text-center m-2 ">Pending District</h5>
+                  <div class="card-body  card4">
+                   <div class=""> <p class="card-text text-center m-2 ">5</p></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+       </div>
+       <div class="container-fluid bg-light">
+        <div class="row">
+          <div class="col-md-6 bg-white p-3 rounded ">
+            <div class="chart-box border p-5 rounded">
+              <canvas id="myChart" width="400" height="400"></canvas>
+            </div>
+          </div>
+          <div class="col-md-6 bg-white p-3 rounded">
+            <div class="chart-box p-5 border rounded">
+              <canvas id="myDonut" width="400" height="400"></canvas>
+    
+            </div>
+          </div>
+        </div>
+      </div>
+      <p class="text-capitalize mt-5">Powered by company name</p>
+      </div>
+    </main>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.0.2/dist/chart.min.js"></script>
+    <script src="./js/jquery-3.5.1.js"></script>
+    <script src="./js/jquery.dataTables.min.js"></script>
+    <script src="./js/dataTables.bootstrap5.min.js"></script>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
